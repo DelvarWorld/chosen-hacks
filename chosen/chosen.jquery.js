@@ -371,7 +371,7 @@
       var tabbed_item;
       tabbed_item = this.is_multiple ? this.search_field : this.selected_item;
       this.form_field_jq.attr("tabindex", tabbed_item.attr("tabindex"));
-      return tabbed_item.attr("tabindex" - 1);
+      return tabbed_item.attr("tabindex", - 1);
     };
     Chosen.prototype.show_search_field_default = function() {
       if (this.is_multiple && this.choices < 1 && !this.active_field) {
